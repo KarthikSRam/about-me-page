@@ -1,0 +1,19 @@
+#projectsCarousel {
+  width: 60%;
+  height: 60%;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  /* height: 30%; */
+}
+
+/* div img {
+  width: 100%;
+} */

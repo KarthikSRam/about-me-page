@@ -2,6 +2,11 @@ body {
   background-color: #B1FFBA;
 }
 
+#profile-pic {
+  width: 30%;
+  height: 30%;
+}
+
 #projectsCarousel {
   width: 60%;
   height: 60%;
@@ -15,6 +20,10 @@ body {
 
 h1 {
   font-family: "Rammetto One", cursive;
+  color: #7120E8;
+}
+
+h2 {
   color: #7120E8;
 }
 

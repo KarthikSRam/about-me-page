@@ -1,3 +1,7 @@
+body {
+  background-color: #B1FFBA;
+}
+
 #projectsCarousel {
   width: 60%;
   height: 60%;
@@ -7,6 +11,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+h1 {
+  font-family: "Rammetto One", cursive;
+  color: #7120E8;
 }
 
 img {

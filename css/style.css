@@ -14,8 +14,12 @@ header {
   width: 100%;
 }
 
-header nav {
+/* p {
+  font-size: 1.4em;
+} */
 
+.spacing-for-nav {
+  height: 3em;
 }
 
 header nav a {
@@ -38,6 +42,7 @@ header nav a:hover {
 }
 
 .wrapper{
+  padding-top: 1.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +51,7 @@ header nav a:hover {
 h1 {
   font-family: "Rammetto One", cursive;
   color: #7120E8;
-  margin-top: 2.5em;
+  /* margin-top: 2.5em; */
 }
 
 h2 {
@@ -58,6 +63,13 @@ img {
   /* height: 30%; */
 }
 
-/* div img {
-  width: 100%;
-} */
+.two-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left-column, .right-column {
+  width: 35%;
+  /* text-align: center; */
+}

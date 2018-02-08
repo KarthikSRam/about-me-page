@@ -14,9 +14,9 @@ header {
   width: 100%;
 }
 
-/* p {
+.left-column p, .right-column p {
   font-size: 1.4em;
-} */
+}
 
 .spacing-for-nav {
   height: 3em;

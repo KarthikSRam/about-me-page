@@ -46,6 +46,12 @@ header nav a:hover {
   border-bottom: 2px solid green;
 }
 
+a.active {
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid green;
+}
+
 #profile-pic {
   width: 30%;
   height: 30%;

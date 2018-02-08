@@ -20,7 +20,7 @@
         <a href="#about" id="aboutLink">About</a>
         <a href="#projects" id="projectsLink">Portfolio</a>
         <a href="#testimonials" id="testimonialsLink">Quotes</a>
-        <a href="#">Contact</a>
+        <a href="#comments" id="commentsLink">Contact</a>
       </nav>
     </header>
     <div class="wrapper">
@@ -82,6 +82,32 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>-Pluto</p>
       </div>
+    </div>
+
+    <div id="comments" class="spacing-for-nav"></div>
+    <h2 id="leave-comment">Contact Me</h2>
+    <div class="leave-a-comment-div">
+
+      <form id="comment-form" method="post" action="">
+        <div class="form-group col-third">
+          <input type="text" name="name" placeholder="NAME*">
+          <p class="error-message col-third">Please enter your full name.</p>
+        </div>
+        <div class="form-group col-third">
+          <input type="text" name="email" placeholder="EMAIL*">
+          <p class="error-message col-third">Please enter an email address.</p>
+        </div>
+        <div class="form-group col-third">
+          <input type="text" name="phoneNumber" placeholder="PHONE NUMBER*">
+          <p class="error-message col-third">Please enter a phone number.</p>
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="MESSAGE*" cols="30" rows="10"></textarea>
+          <p class="error-message">Please enter a message.</p>
+        </div>
+        <button type="submit" class="form-button">SUBMIT</button>
+      </form>
+
     </div>
     <footer>
       <p>&copy;2018 Karthik S. Ram</p>

@@ -67,6 +67,8 @@ a.active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 0em;
+
 }
 
 h1 {
@@ -93,4 +95,102 @@ img {
 .left-column, .right-column {
   width: 35%;
   /* text-align: center; */
+}
+
+.col-third {
+	width: 31%;
+	margin: 0em 0.6em;
+}
+
+.leave-a-comment-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/* justify-content: space-around; */
+}
+
+form {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+button:hover {
+  background-color: green;
+  color: white;
+  font-weight: 600;
+}
+
+.error {
+	border: 2px solid #ED5254;
+}
+
+.error-message {
+	margin: -5px 0 12px;
+	text-align: left;
+	font-size: 1em;
+	color: #ED5254;
+	display: none;
+	width: 100%;
+}
+
+.form-group input, .form-group:last-of-type {
+	width: 100%
+}
+
+.form-group {
+  margin-bottom: 0.2em;
+}
+
+#leave-comment {
+  text-align: center;
+}
+
+.form-button {
+	width: 96.8%;
+	/* padding-left: 7px; */
+}
+
+input {
+  outline: 0;
+  border: 2px solid #44545E;
+  color: #44545E;
+  padding: 8px 25.5px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  margin: 0.2em;
+}
+
+textarea {
+  width: 96.5%;
+  outline: 0;
+  border: 2px solid #44545E;
+  color: #44545E;
+  padding: 8px 25.5px;
+	/* padding: 8px 25.5px 8px 40px ; */
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  margin: 0em 0.2em 0.2em 1.6em;
+}
+
+button {
+  cursor: pointer;
+  outline: 0;
+  border: 2px solid #44545E;
+  color: #44545E;
+  padding: 8px 25.5px;
+  background-color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  margin-bottom: 2em;
+}
+
+textarea+p.error-message {
+  margin-left: 1.3em;
 }

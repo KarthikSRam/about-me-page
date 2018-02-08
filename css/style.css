@@ -15,6 +15,12 @@ header {
   z-index: 1000;
 }
 
+footer {
+  font-size: 2em;
+  color: white;
+  background-color: black;
+}
+
 .testimonial-div {
   width: 70%;
   font-size: 1.4em;

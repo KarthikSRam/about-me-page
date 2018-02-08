@@ -12,6 +12,12 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
+}
+
+.testimonial-div {
+  width: 70%;
+  font-size: 1.4em;
 }
 
 .left-column p, .right-column p {
@@ -25,10 +31,13 @@ header {
 header nav a {
   color: white;
   margin: auto 1em;
+  text-decoration: none;
 }
 
 header nav a:hover {
-  color: green;
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid green;
 }
 
 #profile-pic {

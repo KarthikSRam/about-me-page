@@ -6,6 +6,7 @@ $(window).on('load', function(){
   var $sections = $('.spacing-for-nav');
   $(window).on("scroll", function(){
     var currentScroll = $(this).scrollTop();
+    var $currentSection = $("#aboutLink");
 
     $sections.each(function(){
       var divPosition = $(this).offset().top;
@@ -18,7 +19,16 @@ $(window).on('load', function(){
     })
   });
 
-  
+  //Animated scroll to sections
+  $('a').on("click", function(e){
+    e.preventDefault();
+    var clickedID = $(this).attr("id");
+    clickedID = clickedID.substring(0, clickedID.length - 4);
+    console.log(clickedID);
+    $('html, body').animate({
+        scrollTop: $("#" + clickedID).offset().top
+    }, 2000);
+  });
 
   //Add event listener to form
   $('#comment-form').on('submit', function(e){

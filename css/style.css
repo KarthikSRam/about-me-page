@@ -15,6 +15,29 @@ header {
   z-index: 1000;
 }
 
+.hamburger, .hamburger:focus {
+  color: white;
+  font-size: 27px;
+  padding: 10px 20px;
+  display: none;
+}
+
+.hamburger-menu {
+  margin-top: 4em;
+}
+
+.hamburger-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+  text-align: center;
+}
+
+.hamburger:hover {
+  color: green;
+}
+
 footer {
   font-size: 2em;
   color: white;
@@ -34,7 +57,7 @@ footer {
   height: 3em;
 }
 
-header nav a {
+header nav a, header nav a:focus {
   color: white;
   margin: auto 1em;
   text-decoration: none;
@@ -58,8 +81,8 @@ a.active {
 }
 
 #projectsCarousel {
-  width: 60%;
-  height: 60%;
+  width: 80%;
+  height: 80%;
 }
 
 .wrapper{
@@ -193,4 +216,40 @@ button {
 
 textarea+p.error-message {
   margin-left: 1.3em;
+}
+
+@media screen and (max-width: 560px) {
+  .hamburger {
+    display: inline-block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .col-third {
+    width: 96.5%;
+  }
+
+  .two-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-column, .right-column {
+    width: 90%;
+  }
+
+  textarea {
+    margin: 0em 0.2em 0.2em 0.6em;
+  }
+
+  form {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	align-content: center;
+  	flex-wrap: wrap;
+  }
 }

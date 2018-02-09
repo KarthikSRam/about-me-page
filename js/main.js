@@ -1,6 +1,17 @@
 $(window).on('load', function(){
   console.log("Sanity check");
 
+  //initially hide the hamburger dropdown menu
+
+  $(".hamburger-menu").hide();
+
+  //hamburger Functionality
+
+  $(".hamburger").on("click", function(e){
+    e.preventDefault();
+    $(".hamburger-menu").toggle();
+  })
+
   //Functionality for highlighting the current nav section.
   //Referenced from https://codepen.io/clokey2k/pen/jgfFD
   var $sections = $('.spacing-for-nav');
@@ -20,7 +31,7 @@ $(window).on('load', function(){
   });
 
   //Animated scroll to sections
-  $('a').on("click", function(e){
+  $('nav a').on("click", function(e){
     e.preventDefault();
     var clickedID = $(this).attr("id");
     clickedID = clickedID.substring(0, clickedID.length - 4);

@@ -31,7 +31,17 @@ $(window).on('load', function(){
   });
 
   //Animated scroll to sections
-  $('nav a, .hamburger-menu ul li a').on("click", function(e){
+  $('nav a').on("click", function(e){
+    e.preventDefault();
+    var clickedID = $(this).attr("id");
+    clickedID = clickedID.substring(0, clickedID.length - 4);
+    console.log(clickedID);
+    $('html, body').animate({
+        scrollTop: $("#" + clickedID).offset().top
+    }, 2000);
+  });
+
+  $('.hamburger-menu ul li a').on("click", function(e){
     e.preventDefault();
     var clickedID = $(this).attr("id");
     clickedID = clickedID.substring(0, clickedID.length - 4);

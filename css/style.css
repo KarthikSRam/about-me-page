@@ -24,6 +24,19 @@ header {
 
 .hamburger-menu {
   margin-top: 4em;
+  background: black;
+  color: white;
+  text-decoration: none;
+  position: fixed;
+  top: 25;
+  width: 100%;
+  z-index: 1000;
+}
+
+.hamburger-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
 }
 
 .hamburger-menu ul {
@@ -218,7 +231,8 @@ textarea+p.error-message {
   margin-left: 1.3em;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 926px) {
+/* @media screen and (max-width: 560px) { */
   .hamburger {
     display: inline-block;
   }

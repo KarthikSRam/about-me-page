@@ -66,4 +66,55 @@ $(window).on('load', function(){
 			 $(this).siblings('.error-message').hide();
     });
   });
+
+  //Rotating testimonials
+
+  // var testimonials = [
+  //   {
+  //     paragraph: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  //     author: "-Pluto"
+  //   },
+  //   {
+  //     paragraph: "Karthik is a great teammate to work with and always gets the job done",
+  //     author: "-John"
+  //   },
+  //   {
+  //     paragraph: "Working with Karthik has been a privilege and a pleasure!",
+  //     author: "-Smith"
+  //   }
+  // ];
+  // for(var i=0; i<testimonials.length; i++){
+  //   $('.testimonial-div').delay(2000).fadeOut();
+  //   $('.testimonial-div p:first-child').html(testimonials[i].paragraph);
+  //   $('.testimonial-div p:last-child').html(testimonials[i].author);
+  //   $('.testimonial-div').fadeIn();
+  //   // if(i == testimonials.length - 1){
+  //   //   i = -1;
+  //   // }
+  // }
+
+  //Code from https://codepen.io/htmlr/pen/dslfL
+  function initQuoteCarousel() {
+
+    var $quotesWrapper = $(".testimonial-div");
+    var $quotes = $quotesWrapper.find("blockquote");
+
+    if (!$quotes.length) {
+        return;
+    }
+
+    var selectNextQuote = function () {
+        // keep moving first quote in dom to the end to make continuous
+        var $quote = $quotesWrapper.find("blockquote:first").detach().appendTo($quotesWrapper);
+
+        setTimeout(selectNextQuote, $quote.data("timeout"));
+    };
+
+    setTimeout(selectNextQuote, $quotes.filter(":first").data("timeout"));
+
+  }
+
+  $(function () {
+    initQuoteCarousel();
+  });
 })

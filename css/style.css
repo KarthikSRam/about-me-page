@@ -15,6 +15,26 @@ header {
   z-index: 1000;
 }
 
+.testimonial-div {
+  text-align: center;
+}
+
+.testimonial-div blockquote:first-child {
+    opacity: 0;
+    display: none;
+    /* transform: translateY(-10px) scale(1.1); */
+}
+.testimonial-div blockquote:first-child + blockquote {
+    opacity: 1;
+    z-index: 1;
+    transition: opacity 1.6s ease 0s;
+}
+
+.tetimonial-div blockquote:nth-child(1), .testimonial-div blockquote:nth-child(2) {
+  opacity: 0;
+  display: none;
+}
+
 .hamburger, .hamburger:focus {
   color: white;
   font-size: 27px;

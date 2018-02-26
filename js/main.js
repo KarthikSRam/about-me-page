@@ -1,3 +1,4 @@
+// TODO: $(document).on (ready, function(){}) will load AFTER the html has finished loading. window on load may create timing errors (rare, but possible)
 $(window).on('load', function(){
   console.log("Sanity check");
 
